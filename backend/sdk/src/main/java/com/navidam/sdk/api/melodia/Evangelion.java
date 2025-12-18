@@ -22,9 +22,4 @@ public class Evangelion {
 	        	.nota(Nota.SOL, Figura.NEGRA)
 	        	.nota(Nota.FA, Figura.BLANCA);
 	}
-	
-	public static void main(String[] args) {
-		Melodia melodia = crearMelodia();
-		System.out.printf("Melodia 1: %s%n",melodia);
-	}
 }
