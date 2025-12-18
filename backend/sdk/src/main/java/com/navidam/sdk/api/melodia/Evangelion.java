@@ -4,7 +4,7 @@ import com.navidam.sdk.internal.melodia.*;
 
 public class Evangelion {
 
-	public static Melodia crearMelodia() {
+	public static Melodia crear() {
 		
 	        return new Melodia("Evangelion")
 	            .instrumento(Instrumento.FLAUTA_DULCE)
