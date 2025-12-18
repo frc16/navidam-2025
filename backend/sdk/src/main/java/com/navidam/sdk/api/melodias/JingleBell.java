@@ -1,6 +1,6 @@
 package com.navidam.sdk.api.melodias;
 import com.navidam.sdk.internal.melodia.*;
-public class jingleBell {
+public class JingleBell {
 
 
 		public static Melodia crear() {
