@@ -12,9 +12,27 @@ public class jingleBell {
 				.nota(Nota.DO, Figura.NEGRA)
 				.nota(Nota.SI, Figura.NEGRA)
 				.nota(Nota.DO, Figura.NEGRA)
-				.nota(Nota.LA, Figura.NEGRA);
-				
+				.nota(Nota.LA, Figura.NEGRA)
+				.nota(Nota.LA, Figura.NEGRA)
+				.nota(Nota.RE, Figura.NEGRA)
+				.nota(Nota.DO, Figura.NEGRA)
+				.nota(Nota.LA, Figura.NEGRA)
+				.nota(Nota.LA, Figura.NEGRA)
+				.nota(Nota.SOL, Figura.NEGRA)
+				.nota(Nota.DO, Figura.NEGRA)
+				.nota(Nota.SI, Figura.NEGRA)
+				.nota(Nota.DO, Figura.NEGRA)
+				.nota(Nota.LA, Figura.NEGRA)
+				.nota(Nota.FA, Figura.NEGRA)
+				.nota(Nota.SOL, Figura.NEGRA)
+				.nota(Nota.LA, Figura.NEGRA)
+				.nota(Nota.SOL, Figura.NEGRA)
+				.nota(Nota.SOL, Figura.NEGRA)
+				.nota(Nota.SOL, Figura.NEGRA)
+				.nota(Nota.FA, Figura.NEGRA)
+				.nota(Nota.MI, Figura.NEGRA);		
 		}
+		
 		public static void Main(String[] args) throws Exception{
 			Melodia m = jingleBell.crear();
 					
