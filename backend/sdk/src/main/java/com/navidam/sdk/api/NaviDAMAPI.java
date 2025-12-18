@@ -1,6 +1,6 @@
 package com.navidam.sdk.api;
 
-import com.navidam.sdk.api.melodia.Evangelion;
+import com.navidam.sdk.api.melodias.Evangelion;
 import com.navidam.sdk.api.melodias.jingleBell;
 import com.navidam.sdk.internal.html.Plantilla;
 import com.navidam.sdk.internal.melodia.Melodia;

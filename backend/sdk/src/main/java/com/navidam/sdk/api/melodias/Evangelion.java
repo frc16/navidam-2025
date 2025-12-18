@@ -1,4 +1,4 @@
-package com.navidam.sdk.api.melodia;
+package com.navidam.sdk.api.melodias;
 
 import com.navidam.sdk.internal.melodia.*;
 
