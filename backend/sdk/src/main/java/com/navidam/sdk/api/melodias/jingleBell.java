@@ -32,4 +32,5 @@ public class jingleBell {
 				.nota(Nota.FA, Figura.NEGRA)
 				.nota(Nota.MI, Figura.NEGRA);		
 		}
+
 }
