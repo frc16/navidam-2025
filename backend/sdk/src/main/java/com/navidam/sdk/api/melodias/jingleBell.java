@@ -32,10 +32,4 @@ public class jingleBell {
 				.nota(Nota.FA, Figura.NEGRA)
 				.nota(Nota.MI, Figura.NEGRA);		
 		}
-		
-		public static void Main(String[] args) throws Exception{
-			Melodia m = jingleBell.crear();
-					
-			m.escuchar();
-		}
 }
