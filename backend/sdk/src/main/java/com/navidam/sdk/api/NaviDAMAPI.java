@@ -2,6 +2,7 @@ package com.navidam.sdk.api;
 
 import com.navidam.sdk.api.melodias.Evangelion;
 import com.navidam.sdk.api.melodias.JingleBell;
+import com.navidam.sdk.api.plantilla.PlantillaRoja;
 import com.navidam.sdk.internal.html.Plantilla;
 import com.navidam.sdk.internal.melodia.Melodia;
 import com.navidam.sdk.api.plantilla.Plantillados;
@@ -32,6 +33,8 @@ public class NaviDAMAPI {
                 // new Plantilla("demo").path("demo.html")
         	Plantillados.crear(),
             new Plantilla("Plantilla").path("plantillados.html")
+        		PlantillaRoja.crear(),
+        		new Plantilla ("PlantillaRoja").path("PlantillaRoja.html")
         );
     }
 }
