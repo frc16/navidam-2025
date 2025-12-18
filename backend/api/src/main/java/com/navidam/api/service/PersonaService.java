@@ -39,5 +39,10 @@ public class PersonaService {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'crear'");
     }
+
+    public Persona buscarPorId(Object destinatarioId) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'buscarPorId'");
+    }
     
 }

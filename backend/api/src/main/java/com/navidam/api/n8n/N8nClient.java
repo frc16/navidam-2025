@@ -1,30 +1,30 @@
 package com.navidam.api.n8n;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
-import org.springframework.web.client.RestClient;
+import org.springframework.web.client.RestTemplate;
 
 @Component
 public class N8nClient {
 
-    private final RestClient restClient;
-    private final String webhookUrl;
+    private final RestTemplate restTemplate;
 
-    public N8nClient(
-            RestClient.Builder builder,
-            @Value("${navidam.n8n.webhook-url}") String webhookUrl
-    ) {
-        this.webhookUrl = webhookUrl;
-        this.restClient = builder.build();
+    // Pon la URL de tu webhook de n8n en application.properties o hardcodeada aquí
+    // para pruebas
+    @Value("${n8n.webhook.url:https://n8n.tu-servidor.com/webhook/test}")
+    private String n8nUrl;
+
+    public N8nClient() {
+        this.restTemplate = new RestTemplate();
     }
 
     public void sendPostal(N8nWebhookRequest payload) {
-        restClient.post()
-                .uri(webhookUrl)
-                .contentType(MediaType.APPLICATION_JSON)
-                .body(payload)
-                .retrieve()
-                .toBodilessEntity();
+        try {
+            // Hacemos el POST a n8n
+            restTemplate.postForEntity(n8nUrl, payload, String.class);
+        } catch (Exception e) {
+            // En un caso real, lanzaríamos una excepción personalizada (502/504)
+            throw new RuntimeException("Error comunicando con n8n: " + e.getMessage());
+        }
     }
 }

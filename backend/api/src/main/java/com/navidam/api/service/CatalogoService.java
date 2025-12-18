@@ -1,4 +1,4 @@
-package com.navidam.api.web.controller;
+package com.navidam.api.service;
 
 import java.util.List;
 
@@ -18,6 +18,11 @@ public class CatalogoService {
 
     public List<MelodiaDTO> listarMelodias() {
         throw new UnsupportedOperationException("Unimplemented method 'listarMelodias'");
+    }
+
+    public byte[] generarMidi(Object melodiaId) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'generarMidi'");
     }
 
 }

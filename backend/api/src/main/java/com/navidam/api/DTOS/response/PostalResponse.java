@@ -1,4 +1,4 @@
-package com.navidam.api.web.controller;
+package com.navidam.api.DTOS.response;
 
 public class PostalResponse {
 

@@ -1,5 +1,7 @@
 package com.navidam.api.web.controller;
 
+import com.navidam.api.DTOS.request.PostalRequest;
+import com.navidam.api.DTOS.response.PostalResponse;
 import com.navidam.api.service.PostalService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
