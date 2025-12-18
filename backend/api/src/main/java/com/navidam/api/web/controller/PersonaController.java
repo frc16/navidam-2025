@@ -37,6 +37,5 @@ public class PersonaController {
     void eliminarPersona(@PathVariable Long id){
         this.personaService.eliminarPersona(id);
     }
-
 }
 
