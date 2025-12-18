@@ -1,3 +1,6 @@
+import Fondo from '@/components/Fondo';
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -46,6 +49,9 @@ export default function AltaPersona() {
     };
 
     return (
+        <>
+        <Fondo />
+        <Header />
         <div className="min-h-screen bg-slate-950 text-white font-sans">
             {/* Fondo decorativo navideño */}
             <div className="fixed inset-0 -z-10">
@@ -145,5 +151,8 @@ export default function AltaPersona() {
             </main>
 
         </div>
+
+        <Footer />
+        </>
     );
 }
