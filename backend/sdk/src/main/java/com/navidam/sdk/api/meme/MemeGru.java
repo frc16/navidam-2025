@@ -2,7 +2,7 @@ package com.navidam.sdk.api.meme;
 
 import com.navidam.sdk.internal.meme.*;
 
-public class Meme {
+public class MemeGru {
 
 	String url = Memegen.ofLines(
 		    MemeTemplate.GRU.id(),
