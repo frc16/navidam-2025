@@ -5,15 +5,12 @@
 
 <module name="Checker">
 
-    <!-- Codificación del proyecto -->
     <property name="charset" value="UTF-8"/>
 
-    <!-- No tabuladores, solo espacios -->
     <module name="FileTabCharacter">
         <property name="eachLine" value="true"/>
     </module>
 
-    <!-- Detectar espacios en blanco al final de la línea -->
     <module name="RegexpSingleline">
         <property name="format" value="\s+$"/>
         <property name="message" value="Trailing whitespace"/>
