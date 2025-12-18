@@ -1,7 +1,3 @@
-
-
-
-
 export default function Postal(){
     return(
         <>
@@ -119,7 +115,6 @@ export default function Postal(){
                     </div>
                 </div>
             </main>
-
         </>
     )
 }
